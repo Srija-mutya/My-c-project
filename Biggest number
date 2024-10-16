@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main()
+{
+int a,b,c,d;
+printf("enter the values:");
+scanf("%d%d%d%d",&a,&b,&c,&d);
+if((a>b)&&(a>c)&&(a>d))
+{
+ printf("\n%d is biggest",a);
+}
+else if((b>a)&&(b>c)&&(b>d))
+{ 
+ printf("\n%d value is biggest",b);
+}
+else if((c>a)&&(c>b)&&(c>d))
+{ 
+ printf("\n%d value is biggest",c);
+}
+else
+{ 
+ printf("\n%d value is biggest",d);
+}
+}
+    
