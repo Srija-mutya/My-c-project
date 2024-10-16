@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+int x,y,a,b,i,rem1,rem2;
+printf("enter from and to numbers x and y:");
+scanf("%d%d",&x,&y);
+printf("The numbers are divisible by a and b:");
+scanf("%d%d",&a,&b);
+i=x;
+while(i<=y)
+{
+rem1=i%a;
+rem2=i%b;
+  if(rem1==0||rem2==0)
+  printf("\n%d",i);
+  i++;
+}
+}
