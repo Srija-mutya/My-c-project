@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+int n,a,i,rem,sum=0;
+printf("enter the number:");
+scanf("%d",&n);
+printf("no.of.digits:");
+scanf("%d",&a);
+i=n;
+while(i>0)
+{
+rem=i%10;
+sum=sum+pow(rem,a);
+i=i/10;
+}
+if(sum==n)
+printf("\nn=%d is a armstrong number",n);
+else
+printf("\nn=%d is not a armstrong number",n);
+}
