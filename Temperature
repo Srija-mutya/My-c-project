@@ -1,0 +1,20 @@
+#include<stdio.h>
+void main()
+{
+float temp,c_scale,f_scale;
+char ch,f,c;
+printf("temperature in:");
+scanf("%c",&ch);
+printf("\nenter the temperature:");
+scanf("%f",&temp);
+if(ch=='f')
+{
+c_scale=(temp-32)*5/9;
+printf("\n the temperature in celsius:%f",c_scale);
+}
+else
+{
+f_scale=temp*9/5+32;
+printf("\n the temperature in fahrenheit:%f",f_scale);
+}
+}
